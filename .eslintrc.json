@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "magic/react",
+    "magic/typescript"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src"
+          ]
+        ],
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx",
+          ".json"
+        ]
+      }
+    }
+  },
+  "globals": {
+    "$": true,
+    "location": true,
+    "chrome": true,
+    "TEMPLATE": true,
+    "safari": true
+  },
+  "rules": {
+    "no-bitwise": 0,
+    "prefer-arrow-callback": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-useless-concat": "off"
+  }
+}

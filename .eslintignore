@@ -1,0 +1,8 @@
+node_modules/
+dist/
+extension/
+.yarn/
+.pnp.js
+typings
+**/*.d.ts
+src/common/template/template.js
